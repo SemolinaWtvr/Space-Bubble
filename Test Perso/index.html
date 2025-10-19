@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Bubble</title>
+    <link rel="icon" type="image/x-icon" href="/images/ico.ico">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onkeydown="keyRedirect(event)", onload="newGameBoard(), switchBindings()">
+    <div id="header"><p id="myTest">GAME BOARD</p></div>
+    <div class="centerized" id="gameBoardBox"></div>
+    <div class="centerized2" id="gameBoardButtonBox"></div>
+    <div id="config" class="configOff" value="1"></div>
+    <div id="bombs" class="bombs"></div>
+</body>
+</html>

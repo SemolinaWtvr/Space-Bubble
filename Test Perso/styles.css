@@ -1,0 +1,218 @@
+#header {
+    display: flex;
+    justify-content: center;
+}
+
+#header p {
+    user-select: none;
+}
+
+p {
+    position: fixed;
+    margin-bottom: 2vw;
+    font-size: 60px;
+    text-align: center;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+
+
+
+
+.centerized {
+    display: flex;
+    justify-content: center;
+}
+
+#gameBoard {
+    position: fixed;
+    top:170px;
+
+    width:420px;
+    height:420px;
+    user-select: none;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-spacing: 10px;
+}
+
+#gameBoard td {
+    border: solid 3px rgb(15, 105, 55);
+    background: radial-gradient(circle, aquamarine 0%, mediumspringgreen);
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+.centerized2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 570px;
+}
+
+.centerized2 button {
+    height: 40px;
+    width: 100px;
+    background-color: lightgray;
+    border-radius: 30%;
+    margin:20px;
+    font-weight: bold;
+    font-size:18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.centerized2 #button0:hover {
+    background-color: rgb(235, 179, 179) !important;
+}
+
+.centerized2 #button1:hover {
+    background-color: rgb(155, 184, 236) !important;
+}
+
+.centerized2 #button2:hover {
+    background-color: wheat !important;
+}
+
+.centerized2 #button3:hover {
+    background-color: rgb(219, 188, 219) !important;
+}
+
+
+
+#configWindow {
+    background-color: aquamarine;
+    border: 3px solid rgb(15, 105, 55);
+    border-radius: 10px;
+    position: fixed;
+    height: 300px;
+    width: 100px;
+    top: 26%;
+    left: 100%;
+}
+
+#configWindow input {
+    width: 63px;
+}
+
+#configWindow tr {
+    background-color: aquamarine;
+    text-align: center;
+    font-weight: bold;
+    user-select: none;
+}
+
+#configAssetLeft {
+    width: 20px;
+    height: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 36%;
+    left: 99%;
+
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    padding-left: 1px;
+    
+    background-color: mediumspringgreen;
+    border: solid rgb(15, 105, 55);
+    border-radius: 10px;
+    user-select: none;
+}
+
+#configAssetLeft:hover {
+    cursor:pointer;
+    background-color: rgb(15, 105, 55);
+    border-color: mediumspringgreen;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+
+
+#sizeSelector {
+    width: 4.5vw;
+    position: fixed;
+    top: 57.8%;
+    left: 100vw;
+    user-select: none;
+}
+
+
+
+.configOn #configWindow {
+    left:94vw !important;
+    transition: all !important;
+    transition-duration: 1s !important;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+} 
+
+.configOn #configAssetLeft {
+    left:92.8vw !important;
+    transition: all !important;
+    transition-duration: 1s !important;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+}
+
+.configOn #sizeSelector {
+    left:94.8vw !important;
+    transition: all !important;
+    transition-duration: 1s !important;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+}
+
+
+.configOff #configWindow {
+    left:100vw !important;
+    transition: all !important;
+    transition-duration: 1s !important;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+} 
+
+.configOff #configAssetLeft {
+    left:98.8vw !important;
+    transition: all !important;
+    transition-duration: 1s !important;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+}
+
+.configOff #sizeSelector {
+    left:100.8vw !important;
+    transition: all !important;
+    transition-duration: 1s !important;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+}
+
+
+#gameBoardBG1 {
+    position: fixed;
+    top:56px;
+
+    width: 420px;
+    height: 50px;
+    background: dodgerblue;
+    border-top: solid 30px deepskyblue;
+    border-bottom: solid 20px mediumblue;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+
+.bombs {
+    font-size: 30px;
+    position: fixed;
+    top:180px;
+    margin-left: 5px;
+    user-select: none;
+}
